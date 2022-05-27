@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: API_KEY,
+  apiKey: process.env.API_KEY,
   authDomain: "instant-ppr.firebaseapp.com",
   projectId: "instant-ppr",
   storageBucket: "instant-ppr.appspot.com",
-  messagingSenderId: MESSAGING_API_KEY,
-  appId: API_ID
+  messagingSenderId: process.env.MESSAGING_API_KEY,
+  appId: process.env.API_ID
 };
 
 // Initialize Firebase
